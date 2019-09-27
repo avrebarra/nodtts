@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "NodeJS based CLI tool to generate speech file from text (tts/text-to-speech)",
   "main": "esm",
+  "bin": {
+    "nodetts": "bin/nodetts"
+  },
   "repository": "https://github.com/shrotavre/nodetts",
   "author": "Avreghly Barra <avreghly@gmail.com>",
   "license": "MIT",

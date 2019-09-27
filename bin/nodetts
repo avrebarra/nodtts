@@ -1,0 +1,29 @@
+require = require('esm')(module/*, options */)
+
+const path = require('path')
+const util = require('../lib/util')
+const nodetts = require('../index')
+
+const main = async () => {
+  // Read args
+  var text = util.findargs('text')
+  var dir = util.findargs('dir') || process.cwd()
+  var name = util.findargs('name') || `${text}.mpg`
+  var lang = util.findargs('lang') || 'en'
+  var speed = util.findargs('speed') || 2.5
+
+  // Post processes args
+  if (text == null) {
+    return console.log('ERROR: Please define text to convert')
+  }
+  if (!name.endsWith('.mpg')) {
+    name += '.mpg'
+  }
+
+  // Do some work
+  const filepath = path.join(dir, name)
+  await nodetts.file(filepath, text, lang, speed)
+  console.log('Speech file generated in:', filepath)
+}
+
+main()
