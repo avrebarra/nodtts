@@ -1,0 +1,23 @@
+{
+  "name": "nodetts",
+  "version": "1.0.0",
+  "description": "NodeJS based CLI tool to generate speech file from text (tts/text-to-speech)",
+  "main": "esm",
+  "repository": "https://github.com/shrotavre/nodetts",
+  "author": "Avreghly Barra <avreghly@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "esm": "^3.2.25",
+    "google-tts-api": "^0.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
+
