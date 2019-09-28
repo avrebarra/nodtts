@@ -1,5 +1,5 @@
 {
-  "name": "nodetts",
+  "name": "@shrotavre/nodetts",
   "version": "1.0.0",
   "description": "NodeJS based CLI tool to generate speech file from text (tts/text-to-speech)",
   "main": "esm",
