@@ -1,9 +1,18 @@
 <div class="info">
   <h1 class="name" align="center">nodtts</h1>
+  <div class="badges" align="center">
+    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/shrotavre/nodtts">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/shrotavre/nodtts">
+    <img alt="GitHub" src="https://img.shields.io/github/license/shrotavre/nodtts">
+  </div>
 </div>
 
 
+
 ## Summary
+
+[![NPM](https://nodei.co/npm/nodtts.png)](https://nodei.co/npm/nodtts/)
+
 A NodeJS package to generate sound file from text.
 
 Basically a text-to-speech, and save it for you to a file. This tool works over Google Translate's API hence needing internet to actually work. This is designed to be a port of [text-to-speech-file](https://github.com/shrotavre/text-to-speech-file). Built over JS Promises.
