@@ -1,5 +1,5 @@
 <div class="info">
-  <h1 class="name" align="center">nodetts</h1>
+  <h1 class="name" align="center">nodtts</h1>
 </div>
 
 
@@ -12,59 +12,59 @@ Basically a text-to-speech, and save it for you to a file. This tool works over 
 ## Get Started
 ### Installation
 
-Install `nodetts` using the [npm](https://www.npmjs.com/) package manager:
+Install `nodtts` using the [npm](https://www.npmjs.com/) package manager:
 
 ```sh
-# install globally to use nodetts command
-$ npm install -g nodetts
+# install globally to use nodtts command
+$ npm install -g nodtts
 
 # install as package/library
-$ npm install nodetts
+$ npm install nodtts
 ```
 
 ### Usage
 #### Using as Shell Command
 
-If you installed nodetts as global package, you can use `nodetts` to generate voice files from texts wherever, directly from your shell.
+If you installed nodtts as global package, you can use `nodtts` to generate voice files from texts wherever, directly from your shell.
 
 ```bash
-# install globally to use nodetts command
-$ npm install -g nodetts
+# install globally to use nodtts command
+$ npm install -g nodtts
 
 # BASIC ARGS:
 # run this command for the most basic usage
 # this will create 'Hello from Shrotavre.mpg' in your current directory
-$ nodetts text="Hello from Shrotavre!"
+$ nodtts text="Hello from Shrotavre!"
 
 
 # OTHER ARGS:
 # 'dir' and 'name' args to set where to save the files
-$ nodetts text="Hello!" dir="/Documents/voices" name="test.mpg" 
+$ nodtts text="Hello!" dir="/Documents/voices" name="test.mpg" 
 
 # 'lang' arg to set voice language/locale
 # see here for more information on available locales:
-$ nodetts text="Halo, apa kabar?" lang="id"
+$ nodtts text="Halo, apa kabar?" lang="id"
 
 # 'speed' arg to set voice talking speed. default value is 2.5
-$ nodetts text="Hello!" speed=6
+$ nodtts text="Hello!" speed=6
 ```
 
 #### Using as NodeJS Package/Library
 
-The basic usages of `nodetts` are like this:
+The basic usages of `nodtts` are like this:
 
 ```js
-import nodetts from 'nodetts'
+import nodtts from 'nodtts'
 
 // Generate speech from text and save to a file
-await nodetts.file("~/voices/hello.mpg", "Hello from Indonesia!")
+await nodtts.file("~/voices/hello.mpg", "Hello from Indonesia!")
 
 // Other available functions:
 // Generate file url only. This func also need internet to work
-const url = await nodetts.url("Hello from Indonesia!")
+const url = await nodtts.url("Hello from Indonesia!")
 
 // Generate file stream you can pipe
-const stream = await nodetts.stream("Hello from Indonesia!")
+const stream = await nodtts.stream("Hello from Indonesia!")
 const testfile = fs.createWriteStream("~/voices/test.mpg")
 
 stream.pipe(testfile)
@@ -74,18 +74,18 @@ fwstream.on('finish', function () {
 })
 ```
 
-All `nodetts.file()`, `nodetts.url()`, an `nodetts.stream()` also support two additional parameters you can supply:
+All `nodtts.file()`, `nodtts.url()`, an `nodtts.stream()` also support two additional parameters you can supply:
 
 
 ```js
 // You can change two parameters in the last 2 params of function:
 // - locales/lang: (string) like `en`/`id` default to `en`
 // - speech speed: (float) like 2.5 default to `2.5`
-await nodetts.file("~/voices/hello.mpg", "Hello from Indonesia!", "en", 2.5)
+await nodtts.file("~/voices/hello.mpg", "Hello from Indonesia!", "en", 2.5)
 
 // also supported in url() and stream()
-const url = await nodetts.url("Hola!", "sp", 2.5)
-const stream = await nodetts.stream("Hello!", "en", 2.5)
+const url = await nodtts.url("Hola!", "sp", 2.5)
+const stream = await nodtts.stream("Hello!", "en", 2.5)
 ```
 
 

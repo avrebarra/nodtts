@@ -1,5 +1,5 @@
 {
-  "name": "@shrotavre/nodetts",
+  "name": "nodtts",
   "version": "1.0.0",
   "description": "NodeJS based CLI tool to generate speech file from text (tts/text-to-speech)",
   "keywords": [
@@ -10,9 +10,9 @@
   ],
   "main": "esm",
   "bin": {
-    "nodetts": "bin/nodetts"
+    "nodtts": "bin/nodtts"
   },
-  "repository": "https://github.com/shrotavre/nodetts",
+  "repository": "https://github.com/shrotavre/nodtts",
   "author": "Avreghly Barra <avreghly@gmail.com>",
   "license": "MIT",
   "private": false,
