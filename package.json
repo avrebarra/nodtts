@@ -9,7 +9,7 @@
   "repository": "https://github.com/shrotavre/nodetts",
   "author": "Avreghly Barra <avreghly@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "esm": "^3.2.25",
     "google-tts-api": "^0.0.4"
