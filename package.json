@@ -1,6 +1,6 @@
 {
   "name": "nodtts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS based CLI tool to generate speech file from text (tts/text-to-speech)",
   "keywords": [
     "tts",
